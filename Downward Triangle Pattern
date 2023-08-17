@@ -1,0 +1,20 @@
+import java.util.*;
+public class Main {
+    public static void main (String args[]) {
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int nst=n;
+        int nsp=0;
+        for(int x=1;x<=n;x++){
+            for(int i=1;i<=nsp;i++){
+                System.out.print(" ");
+            }
+            for(int j=1;j<=nst;j++){
+                System.out.print("* ");
+            }
+            nsp++;
+            nst--;
+            System.out.println();
+        }
+    }
+}
